@@ -26,9 +26,9 @@ export class ProductsController {
   findOne(@Payload('id', ParseIntPipe) id: number) {
     return this.productsService.findOne(id);
   }
-
+//
   // @Patch(':id')
-  @MessagePattern({ cmd: 'update_product' })
+  @MessagePattern({ cmd: 'update_product'})
   update(
     // @Param('id', ParseIntPipe) id: number, 
     // @Body() updateProductDto: UpdateProductDto
